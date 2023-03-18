@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author rdcviana
  * @version 1.0
  */
-public class ExemploWhile {
+public class ExemploWhile01 {
     public static void main(String[] args) {
 
         //Definição do objeto scanner
