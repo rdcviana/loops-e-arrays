@@ -13,20 +13,17 @@ public class ExemploWhile02 {
 
         double nota;
 
-        while (true) {
-            System.out.print("Digite uma nota entre 0 e 10: ");
+        System.out.print("Digite uma nota entre 0 e 10: ");
+        nota = scan.nextDouble();
+
+        while (nota < 0 || nota > 10) {
+            System.out.print("Valor inválido! Digite novamente: ");
             nota = scan.nextDouble();
-
-            //Verificação se nota está entre o intervalo entre 0 e 10
-            if (nota < 0 || nota > 10) {
-                System.out.println();
-                System.out.println("Valor inválido! Programa finalizado.");
-                break;
-            }
-
-            System.out.println();
-            System.out.println("Nota digitada: " + nota);
-            System.out.println("-----------------------------");
         }
+
+        System.out.println();
+        System.out.println("Nota digitada: " + nota);
+        System.out.println("Programa finalizado.");
+        System.out.println("-----------------------------");
     }
 }
