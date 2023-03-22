@@ -1,7 +1,13 @@
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
-
+/**
+ * Programa que implementa o Exercício 5 do curso Loops e Array da DIO.
+ * Este programa permite a entrada de 6 letras e em seguida conta quantas dessas letras
+ * são consoantes e as exibe na tela.
+ * @author Rodrigo Viana
+ * @version 1.0
+ */
 public class ExemploArray02 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in).useLocale(Locale.US);
