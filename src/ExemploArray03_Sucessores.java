@@ -14,8 +14,15 @@ public class ExemploArray03_Sucessores {
 
         //Captura dos números
         for (int i = 0; i < 5; i++) {
-            System.out.print("Digite o " + (i + 1) + "° número: ");
-            numeros[i] = scan.nextInt();
+            int numero;
+            System.out.print("Digite o " + (i + 1) + "° número (entre 0 e 100): ");
+            numero = scan.nextInt();
+            //Verifica se número digitado está no intervalo entre 0 e 100, inclusive.
+            while (numero < 0 || numero > 100) {
+                System.out.print("Número fora do intervalo! Digite o " + (i + 1) + "° número (entre 0 e 100): ");
+                numero = scan.nextInt();
+            }
+            numeros[i] = numero;
         }
 
         //Exibição dos números e seus sucessores
